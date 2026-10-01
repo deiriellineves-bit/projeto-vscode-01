@@ -9,8 +9,8 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 background-color: rgb(21, 21, 206);
-
 }
+
 .cartao{
   width: 260px;
   height: 200px;
@@ -20,4 +20,46 @@ background-color: rgb(21, 21, 206);
     width: 100%;
 }
 
-body
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: rgb(228, 224, 219);
+}
+
+main{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cabeclho-link{
+  color: rgb(25, 25, 201);
+  text-decoration: none;
+}
+
+h1{
+  color: rgb(206, 206, 216);
+  font-size: 24;
+}
+
+footer{
+  background-color: rgb(24, 24, 214);
+  padding: 15px 25px;
+  color: rgb(236, 236, 231);
+}
+
+.cartao-interno{
+  position: relative;
+  transition: transfom 0.8s;
+  transform-style: preserve-3d;
+}
+
+.cartao:hover .cartao-interno{
+  transform: rotateY(180eg);
+}
+
+.cartao-frente,cartao-verso{
+  
+}
